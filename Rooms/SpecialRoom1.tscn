@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Rooms/Room.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Rooms/Furniture and Traps/Door.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Rooms/Furniture and Traps/Spikes.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Items/HealthPotion.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Rooms/Furniture and Traps/Torch.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 16 )
@@ -15,6 +16,9 @@ tile_data = PoolIntArray( 22, 6, 0, 23, 14, 0, 24, 14, 0, 25, 5, 0, 65558, 6, 0,
 
 [node name="TileMap2" parent="." index="1"]
 tile_data = PoolIntArray( 524309, 11, 0, 524310, 10, 0, 524311, 10, 0, 524312, 10, 0, 589825, 10, 0, 589826, 9, 0, 589829, 11, 0, 589830, 10, 0, 589831, 10, 0, 589832, 10, 0, 589833, 10, 0, 589834, 10, 0, 589835, 10, 0, 589836, 10, 0, 589837, 10, 0, 589838, 10, 0, 589839, 10, 0, 589840, 10, 0, 589841, 10, 0, 589842, 10, 0, 589843, 10, 0, 589844, 10, 0 )
+
+[node name="FurnitureTileMap" parent="." index="2"]
+tile_data = PoolIntArray( 262147, 30, 0, 262162, 30, 0, 327681, 31, 0, 327682, 31, 0, 393217, 26, 0, 393218, 25, 0, 589844, 35, 0 )
 
 [node name="Position2D" type="Position2D" parent="Entrance" index="0"]
 position = Vector2( 56, 152 )
@@ -121,3 +125,9 @@ shape = SubResource( 1 )
 
 [node name="HealthPotion" parent="." index="8" instance=ExtResource( 4 )]
 position = Vector2( 296, 120 )
+
+[node name="Torch" parent="." index="9" instance=ExtResource( 5 )]
+position = Vector2( 33, 71 )
+
+[node name="Torch2" parent="." index="10" instance=ExtResource( 5 )]
+position = Vector2( 328, 72 )
