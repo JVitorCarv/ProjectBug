@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Weapons/Weapon.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/effects (new)/slash_effect_anim_spritesheet.png" type="Texture" id=2]
-[ext_resource path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/heroes/knight/weapon_sword_1.png" type="Texture" id=3]
+[ext_resource path="res://Art/Assetskryse/icons/16x16/sword_02b.png" type="Texture" id=3]
 [ext_resource path="res://Characters/Player/White.gdshader" type="Shader" id=4]
 [ext_resource path="res://Weapons/sword_active_ability.tres" type="Animation" id=5]
 [ext_resource path="res://Art/19+ icons/swingB.png" type="Texture" id=6]
