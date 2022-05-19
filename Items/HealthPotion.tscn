@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Items/HealthPotion.gd" type="Script" id=1]
 [ext_resource path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/props_itens/potion_red.png" type="Texture" id=2]
+[ext_resource path="res://Sound/health-pickup-6860.mp3" type="AudioStream" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 3.05273
@@ -20,6 +21,9 @@ position = Vector2( -0.28093, -0.374577 )
 shape = SubResource( 1 )
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="HealthPotionSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_HealthPotion_body_entered"]
 [connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]

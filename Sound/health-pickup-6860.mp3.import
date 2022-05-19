@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/health-pickup-6860.mp3-94aac17656fb57a4002559345a65fd4e.mp3str"
+
+[deps]
+
+source_file="res://Sound/health-pickup-6860.mp3"
+dest_files=[ "res://.import/health-pickup-6860.mp3-94aac17656fb57a4002559345a65fd4e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
