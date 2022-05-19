@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Characters/Character.gd" type="Script" id=1]
 [ext_resource path="res://Characters/FSM.gd" type="Script" id=2]
 [ext_resource path="res://Sound/mixkit-air-whistle-punch-2048.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sound/bad-answer-15-sound-effect-6646729.mp3" type="AudioStream" id=4]
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -16,5 +17,8 @@ script = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
-[node name="EnemyHitSFX" type="AudioStreamPlayer" parent="."]
+[node name="HitSFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+
+[node name="GameOverSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

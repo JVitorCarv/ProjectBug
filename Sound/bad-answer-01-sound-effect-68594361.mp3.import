@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bad-answer-01-sound-effect-68594361.mp3-9466141e48c7a8a7816464f31e349ef4.mp3str"
+
+[deps]
+
+source_file="res://Sound/bad-answer-01-sound-effect-68594361.mp3"
+dest_files=[ "res://.import/bad-answer-01-sound-effect-68594361.mp3-9466141e48c7a8a7816464f31e349ef4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

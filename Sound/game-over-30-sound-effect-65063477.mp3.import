@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/game-over-30-sound-effect-65063477.mp3-048b970c7d91c972401ad12d307d2887.mp3str"
+
+[deps]
+
+source_file="res://Sound/game-over-30-sound-effect-65063477.mp3"
+dest_files=[ "res://.import/game-over-30-sound-effect-65063477.mp3-048b970c7d91c972401ad12d307d2887.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

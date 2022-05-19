@@ -39,10 +39,13 @@ func take_damage(dam: int, dir: Vector2, force: int) -> void:
 		if name == "Player":
 			SavedData.hp = hp
 			if hp == 0:
+				$GameOverSFX.play()
 				SceneTransistor.start_transition_to("res://Game.tscn")
 				SavedData.reset_data()
+			else:
+				$HitSFX.play()
 		else:
-			$EnemyHitSFX.play()
+			$HitSFX.play()
 		if hp > 0:
 			state_machine.set_state(state_machine.states.hurt)
 			velocity += dir * force
