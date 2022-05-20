@@ -1,4 +1,6 @@
-[gd_resource type="Animation" format=2]
+[gd_resource type="Animation" load_steps=2 format=2]
+
+[ext_resource path="res://Sound/qubodup-megaswosh1.wav" type="AudioStream" id=1]
 
 [resource]
 resource_name = "active_ability"
@@ -135,4 +137,18 @@ tracks/10/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 2, 1 ]
+}
+tracks/11/type = "audio"
+tracks/11/path = NodePath("FastSwordSFX")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 1 )
+} ],
+"times": PoolRealArray( 0 )
 }
