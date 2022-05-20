@@ -13,7 +13,7 @@ onready var timer: Timer = Timer.new()
 
 func _init() -> void:
 	var __ = connect("body_entered", self, "_on_body_entered")
-	
+	__ = connect("body_exited", self, "_on_body_exited")
 	
 func _ready() -> void:
 	assert(collision_shape != null)
