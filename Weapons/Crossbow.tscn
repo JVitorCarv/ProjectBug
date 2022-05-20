@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Weapons/Weapon.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Weapons/Crossbow.gd" type="Script" id=2]
 [ext_resource path="res://Art/Crossbow.png" type="Texture" id=3]
 [ext_resource path="res://Characters/Player/White.gdshader" type="Shader" id=4]
 [ext_resource path="res://Art/19+ icons/iceB.png" type="Texture" id=5]
+[ext_resource path="res://Sound/mixkit-fast-sword-whoosh-2792.wav" type="AudioStream" id=6]
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
@@ -101,6 +102,20 @@ tracks/2/keys = {
 "args": [ 0 ],
 "method": "shoot"
 } ]
+}
+tracks/3/type = "audio"
+tracks/3/path = NodePath("SwooshSFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"clips": [ {
+"end_offset": 0.69,
+"start_offset": 0.0,
+"stream": ExtResource( 6 )
+} ],
+"times": PoolRealArray( 0 )
 }
 
 [sub_resource type="Animation" id=4]
@@ -229,6 +244,9 @@ anims/attack = SubResource( 3 )
 anims/cancel_attack = SubResource( 4 )
 anims/charge = SubResource( 5 )
 anims/strong_attack = SubResource( 6 )
+
+[node name="SwooshSFX" type="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource( 6 )
 
 [node name="AbilityIcon" parent="UI" index="0"]
 texture_under = ExtResource( 5 )
