@@ -59,6 +59,7 @@ func _spawn_enemies() -> void:
 				enemy = ENEMY_SCENES.GOBLIN.instance()
 			else:
 				enemy = ENEMY_SCENES.ZOMBIE.instance()
+
 		enemy.position = enemy_position.position
 		call_deferred("add_child", enemy)
 		
