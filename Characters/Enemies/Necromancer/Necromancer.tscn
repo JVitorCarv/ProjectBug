@@ -1,7 +1,7 @@
 [gd_scene load_steps=32 format=2]
 
-[ext_resource path="res://Characters/Enemies/Goblin/GoblinFSM.gd" type="Script" id=1]
-[ext_resource path="res://Characters/Enemies/Goblin/Goblin.gd" type="Script" id=2]
+[ext_resource path="res://Characters/Enemies/Necromancer/NecromancerFSM.gd" type="Script" id=1]
+[ext_resource path="res://Characters/Enemies/Necromancer/Necromancer.gd" type="Script" id=2]
 [ext_resource path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/effects (new)/enemy_afterdead_explosion_anim_spritesheet.png" type="Texture" id=3]
 [ext_resource path="res://Art/Assetsdungeon82/frames/necromancer_idle_anim_f3.png" type="Texture" id=4]
 [ext_resource path="res://Art/Assetsdungeon82/frames/necromancer_idle_anim_f1.png" type="Texture" id=5]
@@ -29,22 +29,6 @@ region = Rect2( 0, 0, 16, 20 )
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 16, 20 )
 
-[sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 16, 16 )
-
-[sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 3 )
-region = Rect2( 16, 0, 16, 16 )
-
-[sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 3 )
-region = Rect2( 32, 0, 16, 16 )
-
-[sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 3 )
-region = Rect2( 48, 0, 16, 16 )
-
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 9 )
 region = Rect2( 0, 0, 16, 20 )
@@ -61,6 +45,22 @@ region = Rect2( 0, 0, 16, 20 )
 atlas = ExtResource( 10 )
 region = Rect2( 0, 0, 16, 20 )
 
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 3 )
+region = Rect2( 16, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 3 )
+region = Rect2( 32, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 3 )
+region = Rect2( 48, 0, 16, 16 )
+
 [sub_resource type="SpriteFrames" id=17]
 animations = [ {
 "frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
@@ -68,14 +68,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
-"loop": true,
-"name": "explosion",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
 "loop": true,
 "name": "move",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"loop": true,
+"name": "explosion",
 "speed": 5.0
 } ]
 
@@ -247,9 +247,6 @@ tracks/1/keys = {
 
 [node name="Necromancer" instance=ExtResource( 12 )]
 script = ExtResource( 2 )
-max_hp = 1
-hp = 1
-accerelation = 50
 max_speed = 100
 
 [node name="FiniteStateMachine" parent="." index="0"]
