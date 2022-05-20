@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Weapons/Weapon.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/effects (new)/slash_effect_anim_spritesheet.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Characters/Player/White.gdshader" type="Shader" id=4]
 [ext_resource path="res://Weapons/sword_active_ability.tres" type="Animation" id=5]
 [ext_resource path="res://Art/19+ icons/swingB.png" type="Texture" id=6]
+[ext_resource path="res://Sound/mixkit-fast-sword-whoosh-2792.wav" type="AudioStream" id=7]
 
 [sub_resource type="ShaderMaterial" id=6]
 resource_local_to_scene = true
@@ -103,6 +104,20 @@ tracks/6/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ false ]
+}
+tracks/7/type = "audio"
+tracks/7/path = NodePath("FastSwordSFX")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 7 )
+} ],
+"times": PoolRealArray( 0 )
 }
 
 [sub_resource type="Animation" id=3]
@@ -331,9 +346,11 @@ position = Vector2( 7, 3 )
 texture = ExtResource( 3 )
 
 [node name="Hitbox" parent="Node2D/Sprite" index="0"]
+damage = 2
 knockback_force = 200
 
 [node name="CollisionShape2D" parent="Node2D/Sprite/Hitbox" index="0"]
+scale = Vector2( 1, 4 )
 shape = SubResource( 1 )
 
 [node name="ChargeParticles" parent="Node2D/Sprite" index="1"]
@@ -341,7 +358,8 @@ position = Vector2( 5.65685, -4.24264 )
 
 [node name="SlashSprite" type="Sprite" parent="." index="1"]
 visible = false
-position = Vector2( 18, 0 )
+position = Vector2( 26, 0 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
 hframes = 3
 frame = 2
@@ -355,3 +373,6 @@ anims/strong_attack = SubResource( 5 )
 
 [node name="AbilityIcon" parent="UI" index="0"]
 texture_under = ExtResource( 6 )
+
+[node name="FastSwordSFX" type="AudioStreamPlayer" parent="." index="7"]
+stream = ExtResource( 7 )

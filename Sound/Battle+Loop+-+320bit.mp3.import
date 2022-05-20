@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Battle+Loop+-+320bit.mp3-bffde2d6daa2e419a511114affaaf63d.mp3str"
+
+[deps]
+
+source_file="res://Sound/Battle+Loop+-+320bit.mp3"
+dest_files=[ "res://.import/Battle+Loop+-+320bit.mp3-bffde2d6daa2e419a511114affaaf63d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
