@@ -21,6 +21,10 @@ onready var player_detector: Area2D = get_node("PlayerDetector")
 
 func _ready() -> void:
 	num_enemies = enemy_positions_container.get_child_count()
+	if num_enemies == 1:
+		$BossSong.play()
+		
+		
 	
 	
 func _on_enemy_killed() -> void:

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Boss Fight.wav-10c3ba064c8acb39baba9baaf3be5164.sample"
+
+[deps]
+
+source_file="res://Sound/Boss Fight.wav"
+dest_files=[ "res://.import/Boss Fight.wav-10c3ba064c8acb39baba9baaf3be5164.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
