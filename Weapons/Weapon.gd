@@ -17,13 +17,12 @@ onready var cool_down_timer: Timer = get_node("CoolDownTimer")
 onready var ui: CanvasLayer = get_node("UI")
 onready var ability_icon: TextureProgress = ui.get_node("AbilityIcon")
 
-
 func _ready() -> void:
 	if not on_floor:
 		player_detector.set_collision_mask_bit(0, false)
 		player_detector.set_collision_mask_bit(1, false)
 
-
+# Handles animations
 func get_input() -> void:
 	if Input.is_action_just_pressed("ui_attack") and not animation_player.is_playing():
 		animation_player.play("charge")
@@ -37,30 +36,29 @@ func get_input() -> void:
 		cool_down_timer.start()
 		ui.recharge_ability_animation(cool_down_timer.wait_time)
 		animation_player.play("active_ability")
-			
-			
+
+
 func move(mouse_direction: Vector2) -> void:
 	if ranged_weapon:
 		rotation_degrees = rad2deg(mouse_direction.angle()) + rotation_offset
 	else:
 		if not animation_player.is_playing() or animation_player.current_animation == "charge":
 			rotation = mouse_direction.angle()
+			# Defines rotation according to direction
 			hitbox.knockback_direction = mouse_direction
 			if scale.y == 1 and mouse_direction.x < 0:
 				scale.y = -1
 			elif scale.y == -1 and mouse_direction.x > 0:
 				scale.y = 1
-			
-			
+
+
 func cancel_attack() -> void:
 	animation_player.play("cancel_attack")
-	
-	
+
 func is_busy() -> bool:
 	if animation_player.is_playing() or charge_particles.emitting:
 		return true
 	return false
-
 
 func _on_PlayerDetector_body_entered(body: KinematicBody2D) -> void:
 	if body != null:
@@ -68,6 +66,7 @@ func _on_PlayerDetector_body_entered(body: KinematicBody2D) -> void:
 		player_detector.set_collision_mask_bit(1, false)
 		body.pick_up_weapon(self)
 		position = Vector2.ZERO
+		# Grabs weapon on walk
 	else:
 		var __ = tween.stop_all()
 		assert(__)
@@ -88,17 +87,14 @@ func _on_Tween_tween_completed(_object: Object, _key: NodePath) -> void:
 
 func _on_CoolDownTimer_timeout() -> void:
 	can_active_ability = true
-	
-	
+
 func show() -> void:
 	ability_icon.show()
 	.show()
-	
-	
+
 func hide() -> void:
 	ability_icon.hide()
 	.hide()
-	
-	
+
 func get_texture() -> Texture:
 	return get_node("Node2D/Sprite").texture

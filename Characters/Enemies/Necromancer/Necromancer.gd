@@ -1,6 +1,6 @@
 extends Enemy
 
-const THROWABLE_KNIFE_SCENE: PackedScene = preload("res://Characters/Enemies/Necromancer/Gem.tscn")
+const THROWABLE_FIREBALL_SCENE: PackedScene = preload("res://Characters/Enemies/Necromancer/Fireball.tscn")
 
 const MAX_DISTANCE_TO_PLAYER: int = 80
 const MIN_DISTANCE_TO_PLAYER: int = 40
@@ -13,7 +13,6 @@ var distance_to_player: float
 
 onready var attack_timer: Timer = get_node("AttackTimer")
 onready var aim_raycast: RayCast2D = get_node("AimRayCast")
-
 
 func _on_PathTimer_timeout() -> void:
 	if is_instance_valid(player):
@@ -32,18 +31,15 @@ func _on_PathTimer_timeout() -> void:
 		path_timer.stop()
 		path = []
 		mov_direction = Vector2.ZERO
-			
-			
+
 func _get_path_to_move_away_from_player() -> void:
 	var dir: Vector2 = (global_position - player.position).normalized()
 	path = navigation.get_simple_path(global_position, global_position + dir * 100)
-	
-	
+
 func _throw_knife() -> void:
-	var projectile: Area2D = THROWABLE_KNIFE_SCENE.instance()
+	var projectile: Area2D = THROWABLE_FIREBALL_SCENE.instance()
 	projectile.launch(global_position, (player.position - global_position).normalized(), projectile_speed)
 	get_tree().current_scene.add_child(projectile)
-
 
 
 func _on_AttackTimer_timeout() -> void:

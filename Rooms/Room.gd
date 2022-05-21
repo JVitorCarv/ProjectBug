@@ -10,7 +10,7 @@ const ENEMY_SCENES: Dictionary = {
 	"GOBLIN": preload("res://Characters/Enemies/Goblin/Goblin.tscn"),
 	"ZOMBIE": preload("res://Characters/Enemies/Zombie/Zombie.tscn"),
 	"NECROMANCER": preload("res://Characters/Enemies/Necromancer/Necromancer.tscn"),
-	"SLIME_BOSS": preload("res://Characters/Enemies/Bosses/SlimeBoss.tscn"),
+	"BOSS": preload("res://Characters/Enemies/Bosses/Boss.tscn"),
 }
 
 var num_enemies: int
@@ -26,39 +26,35 @@ func _ready() -> void:
 	num_enemies = enemy_positions_container.get_child_count()
 	if num_enemies == 1:
 		$BossSong.play()
-		
-		
-	
-	
+
 func _on_enemy_killed() -> void:
 	num_enemies -= 1
 	if num_enemies == 0:
 		_open_doors()
-	
-	
+
+
 func _open_doors() -> void:
 	for door in door_container.get_children():
 		door.open()
-		
-		
+
 func _close_entrance() -> void:
 	for entry_position in entrance.get_children():
 		tilemap.set_cellv(tilemap.world_to_map(entry_position.position), 1)
 		tilemap.set_cellv(tilemap.world_to_map(entry_position.position) + Vector2.DOWN, 2)
-		
-		
+
 func _spawn_enemies() -> void:
 	for enemy_position in enemy_positions_container.get_children():
 		var enemy: KinematicBody2D
 		if boss_room:
-			enemy = ENEMY_SCENES.SLIME_BOSS.instance()
+			enemy = ENEMY_SCENES.BOSS.instance()
 			num_enemies = 15
 		else:
-			if randi() % 4 == 0:
+			var random_value: int = randi() % ENEMY_SCENES.size()
+			if random_value == 0:
 				enemy = ENEMY_SCENES.FLYING_CREATURE.instance()
-			elif randi() % 4 == 1:
+			elif random_value == 1:
 				enemy = ENEMY_SCENES.GOBLIN.instance()
-			elif randi() % 4 == 2:
+			elif random_value == 2:
 				enemy = ENEMY_SCENES.ZOMBIE.instance()
 			else:
 				enemy = ENEMY_SCENES.NECROMANCER.instance()
@@ -69,7 +65,6 @@ func _spawn_enemies() -> void:
 		var spawn_explosion: AnimatedSprite = SPAWN_EXPLOSION_SCENE.instance()
 		spawn_explosion.position = enemy_position.position
 		call_deferred("add_child", spawn_explosion)
-
 
 
 func _on_PlayerDetector_body_entered(_body: KinematicBody2D) -> void:
