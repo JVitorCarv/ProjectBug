@@ -28,7 +28,7 @@ position = Vector2( 72, 88 )
 position = Vector2( 64, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2( 64, 80 )
+position = Vector2( 64, 77 )
 shape = SubResource( 1 )
 
 [node name="WeaponPos" parent="." index="8"]

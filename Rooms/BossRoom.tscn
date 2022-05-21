@@ -29,7 +29,7 @@ position = Vector2( 240, 16 )
 position = Vector2( 240, 120 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2( 240, 256 )
+position = Vector2( 240, 254 )
 shape = SubResource( 1 )
 
 [node name="BossSong" type="AudioStreamPlayer" parent="." index="8"]

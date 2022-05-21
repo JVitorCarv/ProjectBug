@@ -43,7 +43,7 @@ position = Vector2( 212, 79 )
 position = Vector2( 215, 52 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2( 160, 160 )
+position = Vector2( 160, 157 )
 shape = SubResource( 1 )
 
 [node name="Torch" parent="." index="8" instance=ExtResource( 3 )]
