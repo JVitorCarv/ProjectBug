@@ -226,16 +226,18 @@ ranged_weapon = true
 
 [node name="Sprite" parent="Node2D" index="0"]
 material = SubResource( 2 )
-position = Vector2( 7.18891, -6.44835 )
-rotation = 1.5708
+position = Vector2( 6.62032, 6.60162 )
+rotation = 3.14801
 scale = Vector2( 0.973929, 0.734075 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" parent="Node2D/Sprite/Hitbox" index="0"]
+rotation = 0.423784
+scale = Vector2( 0.0908939, 2.2937 )
 disabled = false
 
 [node name="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2( -2, -10 )
+position = Vector2( 10, -2 )
 rotation = 1.5708
 shape = SubResource( 1 )
 
