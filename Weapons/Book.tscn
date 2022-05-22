@@ -220,7 +220,7 @@ tracks/2/keys = {
 } ]
 }
 
-[node name="Staff" instance=ExtResource( 5 )]
+[node name="Book" instance=ExtResource( 5 )]
 script = ExtResource( 2 )
 ranged_weapon = true
 

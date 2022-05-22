@@ -91,6 +91,7 @@ scale = Vector2( 0.625, 0.625 )
 texture = null
 
 [node name="Fireball" type="AnimatedSprite" parent="." index="2"]
+modulate = Color( 0.027451, 1, 0.754963, 1 )
 position = Vector2( 0.705, 5.96046e-08 )
 scale = Vector2( 0.0300977, 0.03125 )
 frames = SubResource( 2 )
