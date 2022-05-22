@@ -4,7 +4,7 @@
 [ext_resource path="res://Rooms/Furniture and Traps/Door.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Rooms/Furniture and Traps/Torch.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Weapons/Crossbow.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Weapons/Staff.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Weapons/Book.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 24 )
