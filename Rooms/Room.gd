@@ -10,6 +10,7 @@ const ENEMY_SCENES: Dictionary = {
 	"GOBLIN": preload("res://Characters/Enemies/Goblin/Goblin.tscn"),
 	"ZOMBIE": preload("res://Characters/Enemies/Zombie/Zombie.tscn"),
 	"NECROMANCER": preload("res://Characters/Enemies/Necromancer/Necromancer.tscn"),
+	"TANK": preload("res://Characters/Enemies/Tank/Tank.tscn"),
 	"BOSS": preload("res://Characters/Enemies/Bosses/Boss.tscn"),
 }
 
@@ -56,8 +57,10 @@ func _spawn_enemies() -> void:
 				enemy = ENEMY_SCENES.GOBLIN.instance()
 			elif random_value == 2:
 				enemy = ENEMY_SCENES.ZOMBIE.instance()
-			else:
+			elif random_value == 3:
 				enemy = ENEMY_SCENES.NECROMANCER.instance()
+			else:
+				enemy = ENEMY_SCENES.TANK.instance()
 
 		enemy.position = enemy_position.position
 		call_deferred("add_child", enemy)
