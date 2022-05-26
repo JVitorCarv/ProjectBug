@@ -1,4 +1,4 @@
 # ProjectBug
-Lorem ipsum
+Lorem ipsum dolor sit amet
 
 ![Test](Screenshots/download.jpg)
