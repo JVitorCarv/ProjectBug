@@ -49,7 +49,7 @@ func _spawn_enemies() -> void:
 			enemy = ENEMY_SCENES.BOSS.instance()
 			num_enemies = 15
 		else:
-			var random_value: int = randi() % ENEMY_SCENES.size()
+			var random_value: int = randi() % ENEMY_SCENES.size() - 1
 			if random_value == 0:
 				enemy = ENEMY_SCENES.FLYING_CREATURE.instance()
 			elif random_value == 1:

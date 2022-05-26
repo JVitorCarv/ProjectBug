@@ -247,7 +247,9 @@ tracks/1/keys = {
 
 [node name="Necromancer" instance=ExtResource( 12 )]
 script = ExtResource( 2 )
-max_speed = 100
+hp = 1
+accerelation = 60
+max_speed = 120
 
 [node name="FiniteStateMachine" parent="." index="0"]
 script = ExtResource( 1 )
