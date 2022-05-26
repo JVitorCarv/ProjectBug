@@ -10,7 +10,7 @@ func launch(initial_position: Vector2, dir: Vector2, speed: int) -> void:
 	position = initial_position
 	direction = dir
 	knockback_direction = dir
-	fireball_speed = speed * 1
+	fireball_speed = speed * 0.8
 
 	rotation += dir.angle() + PI/4
 

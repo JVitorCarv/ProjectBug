@@ -38,14 +38,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
-"loop": true,
-"name": "dead explosion",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"loop": true,
+"name": "dead explosion",
 "speed": 5.0
 } ]
 
@@ -288,6 +288,8 @@ scale = Vector2( 7.93192, 8.21249 )
 script = ExtResource( 13 )
 max_hp = 8
 hp = 8
+accerelation = 150
+max_speed = 300
 
 [node name="FiniteStateMachine" parent="." index="0"]
 script = ExtResource( 2 )

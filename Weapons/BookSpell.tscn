@@ -77,6 +77,7 @@ tracks/0/keys = {
 [node name="StaffSpell" instance=ExtResource( 8 )]
 collision_mask = 2
 script = ExtResource( 7 )
+damage = 2
 
 [node name="CollisionShape2D" parent="." index="0"]
 shape = SubResource( 1 )
