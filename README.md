@@ -2,7 +2,7 @@
 Project Bug is a game developed using the Godot Engine for educational purposes.
 
 ![Test](Screenshots/download.jpg)
-# How to install and play Project Bug
+# How to install the Project
 1st: Download the game as .zip file
 
 2nd: Extract the .zip in your Desktop
@@ -18,3 +18,12 @@ Project Bug is a game developed using the Godot Engine for educational purposes.
 7th: click in run or f5 to open the game
 
 8th: Have fun :)
+
+# How to play the game
+1st: In the execultable folder download the ProjectBug.rar
+
+2nd: Open the ProjectBug.exe
+
+3rd: Enjoy the game Uwu
+
+![200](https://user-images.githubusercontent.com/101672583/171063366-35f6f612-b7c3-4aa4-baa1-f32e09b3d301.gif)
