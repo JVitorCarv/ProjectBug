@@ -52,7 +52,7 @@ _global_script_class_icons={
 
 config/name="Project Bug"
 run/main_scene="res://Game.tscn"
-config/icon="res://icon.png"
+config/icon="res://Art/Assetskryse/icons/48x48/sword_02b.png"
 
 [autoload]
 
