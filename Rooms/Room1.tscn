@@ -31,7 +31,7 @@ position = Vector2( 128, 16 )
 position = Vector2( 48, 64 )
 
 [node name="Position2D4" type="Position2D" parent="EnemyPositions" index="1"]
-position = Vector2( 57, 44 )
+position = Vector2( 62, 43 )
 
 [node name="Position2D2" type="Position2D" parent="EnemyPositions" index="2"]
 position = Vector2( 161, 60 )
