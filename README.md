@@ -24,6 +24,4 @@ Project Bug is a game developed using the Godot Engine for educational purposes.
 
 2nd: Open the ProjectBug.exe
 
-3rd: Enjoy the game Uwu
-
-![200](https://user-images.githubusercontent.com/101672583/171063366-35f6f612-b7c3-4aa4-baa1-f32e09b3d301.gif)
+3rd: Enjoy the game
