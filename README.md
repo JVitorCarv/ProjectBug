@@ -1,4 +1,4 @@
-# ProjectBug
+# ⚔️ ProjectBug ⚔️
 Project Bug is a game developed for my Imperative and Functional Programming class project. It is my first little game, developed by following lots of tutorials and experimenting for the first time with this engine.
 
 ![bdefca10-484a-41e9-960f-c35a279f073f](https://user-images.githubusercontent.com/89556957/171260076-5c522e1f-5352-405f-aca0-2b82d792d197.jpg)
