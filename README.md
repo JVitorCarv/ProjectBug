@@ -1,5 +1,17 @@
 # ProjectBug
-Project Bug is a game developed using the Godot Engine for educational purposes.
+Project Bug is a game developed for my Imperative and Functional Programming class project. It is my first little game, developed by following lots of tutorials and experimenting for the first time with this engine.
+
+# Members
+## Professor
+Péricles Miranda
+
+## Students
+* Davi Aleixo
+* Diogo Costa
+* Felipe Menelau
+* Leonardo Kaiser
+* Matheus Barros
+* Vitor Carvalho
 
 ![Test](Screenshots/download.jpg)
 # How to install the Project
