@@ -1,39 +1,35 @@
 # ProjectBug
 Project Bug is a game developed for my Imperative and Functional Programming class project. It is my first little game, developed by following lots of tutorials and experimenting for the first time with this engine.
 
-# Members
-## Professor
-Péricles Miranda
+![bdefca10-484a-41e9-960f-c35a279f073f](https://user-images.githubusercontent.com/89556957/171260076-5c522e1f-5352-405f-aca0-2b82d792d197.jpg)
 
-## Students
-* Davi Aleixo
-* Diogo Costa
-* Felipe Menelau
-* Leonardo Kaiser
-* Matheus Barros
-* Vitor Carvalho
+# How to play the game
+1st: In the executable folder, download ProjectBug.rar
 
-![Test](Screenshots/download.jpg)
+2nd: Run ProjectBug.exe
+
+3rd: Enjoy the game
+
 # How to install the Project
 1st: Download the game as .zip file
 
 2nd: Extract the .zip in your Desktop
 
-3rd: Go to https://godotengine.org to download Godot
+3rd: Go to https://godotengine.org to download Godot following the instructions
 
-4th: Install Godot following the Godot instructions
+4th: After installing Godot you can run project.godot using Godot Engine
 
-5th: After installing Godot you can open the Project.Godot in the project main file
+5th: Click on play icon or press F5 (Windows)
 
-6th: Select the Godot Engine to run the Project.Godot
+6th: Have fun :)
 
-7th: click in run or f5 to open the game
+# Members
+Professor: Péricles Miranda
 
-8th: Have fun :)
-
-# How to play the game
-1st: In the execultable folder download the ProjectBug.rar
-
-2nd: Open the ProjectBug.exe
-
-3rd: Enjoy the game
+Students:
+- Davi Aleixo
+- Diogo Costa
+- Felipe Menelau
+- Leonardo Kaiser
+- Matheus Barros
+- Vitor Carvalho
