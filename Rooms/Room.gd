@@ -50,17 +50,17 @@ func _spawn_enemies() -> void:
 			enemy = ENEMY_SCENES.BOSS.instance()
 			num_enemies = 15
 		else:
-			var random_value: int = randi() % ENEMY_SCENES.size() - 1
-			if random_value == 0:
-				enemy = ENEMY_SCENES.FLYING_CREATURE.instance()
-			elif random_value == 1:
-				enemy = ENEMY_SCENES.GOBLIN.instance()
-			elif random_value == 2:
-				enemy = ENEMY_SCENES.ZOMBIE.instance()
-			elif random_value == 3:
+			var random_value: int = randi() % 19
+			if random_value == 0 or random_value == 1:
 				enemy = ENEMY_SCENES.NECROMANCER.instance()
-			else:
+			elif random_value == 2 or random_value == 3 or random_value == 4:
 				enemy = ENEMY_SCENES.TANK.instance()
+			elif random_value == 5 or random_value == 6 or random_value == 7 or random_value == 8:
+				enemy = ENEMY_SCENES.GOBLIN.instance()
+			elif random_value == 9 or random_value == 10 or random_value == 11 or random_value == 12 or random_value == 13:
+				enemy = ENEMY_SCENES.ZOMBIE.instance()
+			else:
+				enemy = ENEMY_SCENES.FLYING_CREATURE.instance()
 
 		enemy.position = enemy_position.position
 		call_deferred("add_child", enemy)

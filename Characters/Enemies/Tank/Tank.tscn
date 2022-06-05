@@ -229,14 +229,17 @@ max_speed = 50
 script = ExtResource( 6 )
 
 [node name="AnimatedSprite" parent="." index="1"]
+scale = Vector2( 0.910526, 0.863248 )
 frames = SubResource( 9 )
 frame = 4
 
 [node name="CollisionShape2D" parent="." index="2"]
 position = Vector2( 0.5, 4 )
+scale = Vector2( 0.941742, 0.889592 )
 shape = SubResource( 15 )
 
 [node name="Hitbox" type="Area2D" parent="." index="3"]
+scale = Vector2( 0.914573, 0.834197 )
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 5 )
