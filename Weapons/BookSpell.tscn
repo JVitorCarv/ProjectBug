@@ -11,7 +11,7 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 resource_local_to_scene = true
-radius = 7.07107
+radius = 5.65685
 height = 0.0
 
 [sub_resource type="AtlasTexture" id=2]
