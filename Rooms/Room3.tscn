@@ -30,31 +30,22 @@ position = Vector2( 120, 184 )
 position = Vector2( 224, 16 )
 
 [node name="Position2D" type="Position2D" parent="EnemyPositions" index="0"]
-position = Vector2( 96, 72 )
+position = Vector2( 114, 105 )
 
 [node name="Position2D2" type="Position2D" parent="EnemyPositions" index="1"]
-position = Vector2( 59, 113 )
+position = Vector2( 84, 49 )
 
-[node name="Position2D4" type="Position2D" parent="EnemyPositions" index="2"]
-position = Vector2( 230, 142 )
+[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="2"]
+position = Vector2( 196, 73 )
 
-[node name="Position2D5" type="Position2D" parent="EnemyPositions" index="3"]
-position = Vector2( 150, 136 )
+[node name="Position2D4" type="Position2D" parent="EnemyPositions" index="3"]
+position = Vector2( 229, 161 )
 
-[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="4"]
-position = Vector2( 181, 61 )
+[node name="Position2D5" type="Position2D" parent="EnemyPositions" index="4"]
+position = Vector2( 262, 113 )
 
-[node name="Position2D7" type="Position2D" parent="EnemyPositions" index="5"]
-position = Vector2( 273, 165 )
-
-[node name="Position2D8" type="Position2D" parent="EnemyPositions" index="6"]
-position = Vector2( 202, 88 )
-
-[node name="Position2D9" type="Position2D" parent="EnemyPositions" index="7"]
-position = Vector2( 127, 67 )
-
-[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="8"]
-position = Vector2( 240, 104 )
+[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="5"]
+position = Vector2( 260, 55 )
 
 [node name="Spikes" parent="Traps" index="0" instance=ExtResource( 3 )]
 position = Vector2( 152, 104 )

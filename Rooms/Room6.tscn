@@ -21,7 +21,10 @@ tile_data = PoolIntArray( 262141, 32, 0, 262142, 32, 0, 262143, 32, 0, 196620, 2
 [node name="Torch" parent="FurnitureTileMap" index="0" instance=ExtResource( 3 )]
 position = Vector2( 233, 55 )
 
-[node name="Torch2" parent="FurnitureTileMap" index="1" instance=ExtResource( 3 )]
+[node name="Torch3" parent="FurnitureTileMap" index="1" instance=ExtResource( 3 )]
+position = Vector2( 47, 200 )
+
+[node name="Torch2" parent="FurnitureTileMap" index="2" instance=ExtResource( 3 )]
 position = Vector2( 52, 58 )
 
 [node name="Position2D" type="Position2D" parent="Entrance" index="0"]
@@ -34,34 +37,31 @@ position = Vector2( 135, 263 )
 position = Vector2( 128, 16 )
 
 [node name="Position2D" type="Position2D" parent="EnemyPositions" index="0"]
-position = Vector2( 20, 156 )
+position = Vector2( 127, 131 )
 
-[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="1"]
-position = Vector2( 41, 185 )
+[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="1"]
+position = Vector2( 126, 77 )
 
-[node name="Position2D7" type="Position2D" parent="EnemyPositions" index="2"]
-position = Vector2( 248, 222 )
+[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="2"]
+position = Vector2( 250, 155 )
 
 [node name="Position2D4" type="Position2D" parent="EnemyPositions" index="3"]
-position = Vector2( -18, 148 )
+position = Vector2( 207, 75 )
 
 [node name="Position2D5" type="Position2D" parent="EnemyPositions" index="4"]
-position = Vector2( 10, 182 )
+position = Vector2( 221, 240 )
 
-[node name="Position2D9" type="Position2D" parent="EnemyPositions" index="5"]
-position = Vector2( 325, 157 )
+[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="5"]
+position = Vector2( -30, 77 )
 
-[node name="Position2D10" type="Position2D" parent="EnemyPositions" index="6"]
-position = Vector2( -3, 76 )
+[node name="Position2D7" type="Position2D" parent="EnemyPositions" index="6"]
+position = Vector2( 325, 158 )
 
-[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="7"]
-position = Vector2( 205, 237 )
+[node name="Position2D8" type="Position2D" parent="EnemyPositions" index="7"]
+position = Vector2( -25, 126 )
 
-[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="8"]
-position = Vector2( 209, 79 )
-
-[node name="Position2D8" type="Position2D" parent="EnemyPositions" index="9"]
-position = Vector2( 242, 82 )
+[node name="Position2D9" type="Position2D" parent="EnemyPositions" index="8"]
+position = Vector2( 16, 170 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
 position = Vector2( 127, 233 )

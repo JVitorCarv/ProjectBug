@@ -68,11 +68,8 @@ position = Vector2( 359, 71 )
 [node name="TileMap2" parent="." index="1"]
 tile_data = PoolIntArray( 196614, 7, 0, 196615, 10, 0, 196616, 10, 0, 196617, 8, 0, 196624, 12, 0, 196625, 10, 0, 196626, 10, 0, 196627, 13, 0, 262145, 9, 0, 262150, 6, 0, 262153, 5, 0, 327685, 7, 0, 327686, 13, 0, 327689, 12, 0, 327690, 8, 0, 393221, 6, 0, 393226, 12, 0, 393227, 8, 0, 393232, 10, 0, 393233, 10, 0, 393234, 10, 0, 393235, 10, 0, 458757, 4, 0, 458758, 9, 0, 458763, 5, 0, 458772, 10, 0, 458779, 10, 0, 524294, 6, 0, 524295, 7, 0, 524296, 10, 0, 524297, 10, 0, 524298, 8, 0, 524299, 12, 0, 524300, 8, 0, 524309, 10, 0, 524314, 10, 0, 524315, 5, 0, 589826, 9, 0, 589830, 6, 0, 589831, 6, 0, 589834, 5, 0, 589836, 5, 0, 589846, 10, 0, 589847, 10, 0, 589848, 10, 0, 589849, 10, 0, 589850, 5, 0, 655366, 6, 0, 655367, 6, 0, 655370, 5, 0, 655371, 11, 0, 655372, 3, 0, 720899, 9, 0, 720902, 4, 0, 720903, 13, 0, 720906, 12, 0, 720907, 3, 0, 720911, 11, 0, 786446, 11, 0, 851972, 9, 0, 851981, 11, 0, 917509, 10, 0, 917510, 10, 0, 917511, 10, 0, 917512, 10, 0, 917513, 9, 0, 917516, 11, 0 )
 
-[node name="HealthPotion" parent="TileMap2" index="0" instance=ExtResource( 4 )]
-position = Vector2( 383, 95 )
-
 [node name="FurnitureTileMap" parent="." index="2"]
-tile_data = PoolIntArray( 65537, 33, 0, 65540, 33, 0, 65542, 32, 0, 65543, 32, 0, 65545, 34, 0, 65546, 30, 0, 65547, 34, 0, 131087, 31, 0, 589832, 32, 0, 589833, 32, 0, 786446, 31, 0 )
+tile_data = PoolIntArray( 65537, 33, 0, 65540, 33, 0, 65542, 32, 0, 65543, 32, 0, 65545, 34, 0, 65546, 30, 0, 65547, 34, 0, 131087, 31, 0, 196628, 34, 0, 196635, 34, 0, 262166, 42, 0, 327705, 30, 0, 458776, 43, 0, 589832, 32, 0, 589833, 32, 0, 786446, 31, 0 )
 
 [node name="Position2D" type="Position2D" parent="Entrance" index="0"]
 position = Vector2( 168, 232 )
@@ -80,30 +77,42 @@ position = Vector2( 168, 232 )
 [node name="Position2D2" type="Position2D" parent="Entrance" index="1"]
 position = Vector2( 184, 232 )
 
+[node name="HealthPotion" parent="." index="4" instance=ExtResource( 4 )]
+position = Vector2( 383, 95 )
+
 [node name="Door" parent="Doors" index="0" instance=ExtResource( 2 )]
 position = Vector2( 48, 16 )
 
 [node name="Position2D" type="Position2D" parent="EnemyPositions" index="0"]
-position = Vector2( 64, 64 )
+position = Vector2( 99, 202 )
 
-[node name="Position2D4" type="Position2D" parent="EnemyPositions" index="1"]
-position = Vector2( 54, 101 )
+[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="1"]
+position = Vector2( 213, 191 )
 
-[node name="Position2D5" type="Position2D" parent="EnemyPositions" index="2"]
-position = Vector2( 76, 134 )
+[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="2"]
+position = Vector2( 216, 113 )
 
-[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="3"]
-position = Vector2( 182, 79 )
+[node name="Position2D4" type="Position2D" parent="EnemyPositions" index="3"]
+position = Vector2( 53, 112 )
 
-[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="4"]
-position = Vector2( 224, 136 )
+[node name="Position2D5" type="Position2D" parent="EnemyPositions" index="4"]
+position = Vector2( 57, 59 )
 
-[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="5"]
-position = Vector2( 80, 176 )
+[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="5"]
+position = Vector2( 192, 55 )
+
+[node name="Position2D7" type="Position2D" parent="EnemyPositions" index="6"]
+position = Vector2( 435, 93 )
+
+[node name="Position2D8" type="Position2D" parent="EnemyPositions" index="7"]
+position = Vector2( 388, 146 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
 position = Vector2( 176, 221 )
 shape = SubResource( 1 )
 
-[node name="Torch" parent="." index="8" instance=ExtResource( 3 )]
-position = Vector2( 216, 24 )
+[node name="Torch" parent="." index="9" instance=ExtResource( 3 )]
+position = Vector2( 383, 23 )
+
+[node name="Torch2" parent="." index="10" instance=ExtResource( 3 )]
+position = Vector2( 212, 23 )

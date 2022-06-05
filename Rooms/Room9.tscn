@@ -28,34 +28,28 @@ position = Vector2( 136, 372 )
 position = Vector2( 128, 16 )
 
 [node name="Position2D" type="Position2D" parent="EnemyPositions" index="0"]
-position = Vector2( 56, 244 )
+position = Vector2( 58, 244 )
 
-[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="1"]
-position = Vector2( 55, 185 )
+[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="1"]
+position = Vector2( 200, 245 )
 
-[node name="Position2D9" type="Position2D" parent="EnemyPositions" index="2"]
-position = Vector2( 56, 132 )
+[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="2"]
+position = Vector2( 54, 164 )
 
 [node name="Position2D4" type="Position2D" parent="EnemyPositions" index="3"]
-position = Vector2( 199, 246 )
+position = Vector2( 198, 180 )
 
 [node name="Position2D5" type="Position2D" parent="EnemyPositions" index="4"]
-position = Vector2( 199, 182 )
+position = Vector2( 57, 94 )
 
-[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="5"]
-position = Vector2( 200, 135 )
+[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="5"]
+position = Vector2( 198, 85 )
 
-[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="6"]
-position = Vector2( 70, 73 )
+[node name="Position2D7" type="Position2D" parent="EnemyPositions" index="6"]
+position = Vector2( 106, 55 )
 
 [node name="Position2D8" type="Position2D" parent="EnemyPositions" index="7"]
-position = Vector2( 183, 70 )
-
-[node name="Position2D10" type="Position2D" parent="EnemyPositions" index="8"]
-position = Vector2( 119, 165 )
-
-[node name="Position2D11" type="Position2D" parent="EnemyPositions" index="9"]
-position = Vector2( 148, 168 )
+position = Vector2( 143, 53 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
 position = Vector2( 128, 352 )

@@ -28,28 +28,25 @@ position = Vector2( 134, 181 )
 position = Vector2( 128, 16 )
 
 [node name="Position2D" type="Position2D" parent="EnemyPositions" index="0"]
-position = Vector2( -56, 111 )
+position = Vector2( 96, 64 )
 
-[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="1"]
-position = Vector2( -82, 92 )
+[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="1"]
+position = Vector2( 158, 61 )
 
-[node name="Position2D9" type="Position2D" parent="EnemyPositions" index="2"]
-position = Vector2( 332, 96 )
+[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="2"]
+position = Vector2( 269, 92 )
 
 [node name="Position2D4" type="Position2D" parent="EnemyPositions" index="3"]
-position = Vector2( 22, 90 )
+position = Vector2( -4, 90 )
 
 [node name="Position2D5" type="Position2D" parent="EnemyPositions" index="4"]
-position = Vector2( -55, 76 )
+position = Vector2( -55, 71 )
 
-[node name="Position2D2" type="Position2D" parent="EnemyPositions" index="5"]
-position = Vector2( 232, 93 )
+[node name="Position2D6" type="Position2D" parent="EnemyPositions" index="5"]
+position = Vector2( 314, 66 )
 
-[node name="Position2D3" type="Position2D" parent="EnemyPositions" index="6"]
-position = Vector2( 308, 72 )
-
-[node name="Position2D8" type="Position2D" parent="EnemyPositions" index="7"]
-position = Vector2( 304, 114 )
+[node name="Position2D8" type="Position2D" parent="EnemyPositions" index="6"]
+position = Vector2( 331, 105 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
 position = Vector2( 128, 151 )
@@ -58,5 +55,17 @@ shape = SubResource( 1 )
 [node name="Torch" parent="." index="8" instance=ExtResource( 3 )]
 position = Vector2( 71, 56 )
 
-[node name="Torch2" parent="." index="9" instance=ExtResource( 3 )]
+[node name="Torch3" parent="." index="9" instance=ExtResource( 3 )]
+position = Vector2( -40, 39 )
+
+[node name="Torch4" parent="." index="10" instance=ExtResource( 3 )]
+position = Vector2( -74, 42 )
+
+[node name="Torch5" parent="." index="11" instance=ExtResource( 3 )]
+position = Vector2( 298, 40 )
+
+[node name="Torch6" parent="." index="12" instance=ExtResource( 3 )]
+position = Vector2( 329, 38 )
+
+[node name="Torch2" parent="." index="13" instance=ExtResource( 3 )]
 position = Vector2( 185, 57 )
